@@ -14,12 +14,17 @@
 </template>
 
 <script>
+// import the Module
 import MonacoEditorVue from "../../src/MonacoEditorVue";
 
 export default {
   name: "App",
   components: {
-    MonacoEditorVue
+    //register Module
+    MonacoEditorVue,
+
+    //alternate form with own name
+    "monaco-editor-vue": MonacoEditorVue
   },
 
   data() {
